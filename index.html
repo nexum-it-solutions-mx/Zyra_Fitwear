@@ -44,17 +44,18 @@
       background-attachment: fixed;
     }
 
-    /* Fondo de pantalla / tarjeta con foto traslúcida */
+    /* Fondo de la tarjeta con bg-gym.jpg traslúcida */
     .bg-gym-overlay {
-      background-image: linear-gradient(to bottom, rgba(13, 13, 14, 0.78), rgba(13, 13, 14, 0.88)), url('bg-gym.png');
+      background-image: linear-gradient(to bottom, rgba(13, 13, 14, 0.75), rgba(13, 13, 14, 0.88)), url('bg-gym.jpg');
       background-size: cover;
       background-position: center;
+      background-repeat: no-repeat;
     }
   </style>
 </head>
 <body class="min-h-screen text-white flex flex-col items-center justify-start p-4 pb-10 font-sans">
 
-  <!-- Card Container con la foto traslúcida de fondo y efecto Glassmorphism -->
+  <!-- Card Container -->
   <div class="w-full max-w-[440px] bg-gym-overlay backdrop-blur-xl border border-zyra-accent/30 rounded-3xl p-6 shadow-[0_20px_50px_rgba(0,0,0,0.8)] flex flex-col items-center relative my-auto overflow-hidden">
     
     <!-- Top Promo Badge -->
@@ -63,25 +64,15 @@
       Envío gratis +$800 MXN
     </div>
 
-    <!-- Brand Header & Logo -->
+    <!-- Encabezado de Marca -->
     <div class="text-center mb-6 relative z-10 w-full flex flex-col items-center">
-      <!-- Logo Container -->
-      <div class="relative inline-block mb-3 group cursor-pointer">
-        <!-- Outer Glow acorde a los colores del sitio -->
-        <div class="absolute -inset-1 bg-gradient-to-r from-zyra-accent to-zyra-beige rounded-2xl blur opacity-50 group-hover:opacity-80 transition duration-300"></div>
-        
-        <!-- Tarjeta blanca del logo con bordes redondeados estéticos -->
-        <div class="relative w-28 h-28 bg-white rounded-2xl p-3 flex items-center justify-center shadow-2xl transition-transform duration-300 group-hover:scale-105 overflow-hidden">
-          <!-- Logo con la ruta a zyra.jpg en tu repositorio -->
-          <img src="zyra.jpg" alt="ZYRA FITWEAR Logo" class="w-full h-full object-contain block">
-        </div>
-      </div>
-
-      <!-- Nombre de la Marca -->
       <h1 class="text-2xl font-extrabold tracking-widest text-white uppercase mb-1 font-syne drop-shadow-md">ZYRA FITWEAR</h1>
+      <p class="text-xs font-semibold tracking-widest text-zyra-accent uppercase drop-shadow mb-4">Rompe tus límites</p>
       
-      <!-- Slogan Oficial -->
-      <p class="text-xs font-semibold tracking-widest text-zyra-accent uppercase drop-shadow">Rompe tus límites</p>
+      <!-- Imagen Horizontal Zyra.png -->
+      <div class="w-full rounded-2xl overflow-hidden border border-zyra-accent/20 shadow-xl bg-black/40">
+        <img src="Zyra.png" alt="ZYRA FITWEAR Banner" class="w-full h-auto object-cover block">
+      </div>
     </div>
 
     <!-- 1. BOTONES DE ACCIÓN RÁPIDA (Guardar y Compartir) -->
